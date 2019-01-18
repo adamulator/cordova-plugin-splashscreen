@@ -374,10 +374,8 @@ public class SplashScreen extends CordovaPlugin {
                 ProgressBar progressBar = new ProgressBar(webView.getContext());
                 float density = cordova.getActivity().getResources().getDisplayMetrics().density;
                 int spinnerSize;
-                if (density < 3.0) {
-                    spinnerSize = 285;
-                } else if (density < 4.0) {
-                    spinnerSize = 285;
+                if (density < 2.1) {
+                    spinnerSize = 200;
                 } else {
                     spinnerSize = 280;
                 }
