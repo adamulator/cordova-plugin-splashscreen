@@ -375,9 +375,9 @@ public class SplashScreen extends CordovaPlugin {
                 float density = cordova.getActivity().getResources().getDisplayMetrics().density;
                 int spinnerSize;
                 if (density < 3.0) {
-                    spinnerSize = 295;
+                    spinnerSize = 285;
                 } else if (density < 4.0) {
-                    spinnerSize = 290;
+                    spinnerSize = 285;
                 } else {
                     spinnerSize = 280;
                 }
