@@ -40,7 +40,6 @@ import android.widget.ImageView;
 import android.widget.LinearLayout;
 import android.widget.ProgressBar;
 import android.widget.RelativeLayout;
-import android.util.Log;
 
 import org.apache.cordova.CallbackContext;
 import org.apache.cordova.CordovaPlugin;
@@ -373,14 +372,13 @@ public class SplashScreen extends CordovaPlugin {
 
                 ProgressBar progressBar = new ProgressBar(webView.getContext());
                 float density = cordova.getActivity().getResources().getDisplayMetrics().density;
-                Log.d("density", String.valueOf((density)));
                 int spinnerSize;
                 if (density < 2) {
                     spinnerSize = 100;
                 } else if (density < 2.5) {
                     spinnerSize = 160;
                 } else if (density < 3) {
-                    spinnerSize = 190;
+                    spinnerSize = 220;
                 } else if (density < 3.5) {
                     spinnerSize = 200;
                 } else {
