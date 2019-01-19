@@ -379,7 +379,7 @@ public class SplashScreen extends CordovaPlugin {
                 } else if (density < 2.5) {
                     spinnerSize = 160;
                 } else if (density < 3) {
-                    spinnerSize = 180;
+                    spinnerSize = 190;
                 } else if (density < 3.5) {
                     spinnerSize = 200;
                 } else {
