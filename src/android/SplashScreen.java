@@ -217,7 +217,7 @@ public class SplashScreen extends CordovaPlugin {
         }
     }
 
-    private void removeSplashScreen(final boolean forceHideImmediately) {
+    private synchronized void removeSplashScreen(final boolean forceHideImmediately) {
         cordova.getActivity().runOnUiThread(new Runnable() {
             public void run() {
                 if (splashDialog != null && splashDialog.isShowing()) {
